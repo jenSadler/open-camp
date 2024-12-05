@@ -9,10 +9,12 @@
 
 <?php get_header(); ?>
 <div id="primary">
-	<main id="main" class="site-main" role="main">
+	<main id="main" class="front-main" role="main">
+	<?php get_template_part( 'template-parts/header/hero'); ?>
 	<?php if(have_posts()): ?>
-		<div class="container">
 		
+			
+			<div class="container hold-post">
 			<?php while(have_posts()): the_post(); ?>
 				<?php the_content();?>
 						

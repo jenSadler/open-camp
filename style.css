@@ -228,16 +228,19 @@ body .btn-check:active + .btn-outline-primary,body .btn-check:checked + .btn-out
     display:relative;
     width:150px;
     height:60px;
+    
 }
 .brand-logo{
     width:150px;
     height:auto;
-    display:absolute
+    display:absolute;
+    border-radius:25px;
 }
 nav {
     border-bottom: 1px solid var(--primary-dark);
     font-family:var(--accent-font);
     color:var(--primary-dark);
+    z-index:10;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -820,4 +823,9 @@ body .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),bo
         color: var(--primary-dark);
         border-radius: 5px;
         font-weight: bold;
+        }
+
+        .hold-post{
+            margin-top:5%;
+            clear:both;
         }
