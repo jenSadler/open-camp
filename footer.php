@@ -17,7 +17,7 @@
 
   <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
 
-      <div class="widget col">
+      <div class="widget col-xs-12 col-md-4">
 
           <?php dynamic_sidebar( 'footer-1' ); ?>
 
@@ -33,7 +33,7 @@
 
       ?>
 
-      <div class="widget col">
+      <div class="widget col-xs-12  col-md-4">
 
           <?php dynamic_sidebar( 'footer-2' ); ?>
 
@@ -49,7 +49,7 @@
 
       ?>
 
-      <div class="widget col">
+      <div class="widget col-xs-12 col-md-4">
 
           <?php dynamic_sidebar( 'footer-3' ); ?>
 

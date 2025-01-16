@@ -93,17 +93,7 @@
     position: absolute;
 }
 
-/* Left and Right Columns */
-.left-comp {
-    bottom:-100%;
-    animation: slide-in-from-bottom 2s forwards; /* Increased sliding time */
-}
 
-.right-comp {
-    top:-100%;
-    animation: slide-in-from-top 2s forwards; /* Increased sliding time */
-    animation-delay: 1s;
-}
 
 
 /* Central Animations */
@@ -165,6 +155,54 @@
     }
 }
 
+@keyframes slide-in-from-left{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slide-in-from-right{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media only screen and (min-width:601px){
+   /* Left and Right Columns */
+.left-comp {
+    bottom:-100%;
+    animation: slide-in-from-bottom 2s forwards; /* Increased sliding time */
+}
+
+.right-comp {
+    top:-100%;
+    animation: slide-in-from-top 2s forwards; /* Increased sliding time */
+    animation-delay: 1s;
+} 
+}
+@media only screen and (max-width:600px){
+
+    .hold-hero {
+        flex-direction:column;
+    }
+/* Left and Right Columns */
+.left-comp {
+    left:-100%;
+    animation: slide-in-from-left 2s forwards; /* Increased sliding time */
+}
+
+.right-comp {
+    right:-100%;
+    animation: slide-in-from-right 2s forwards; /* Increased sliding time */
+    animation-delay: 1s;
+}
+}
 
 
 </style>
